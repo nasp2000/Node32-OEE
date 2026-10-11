@@ -1,15 +1,19 @@
 # Node32-OEE
 
-**OEE and production-counting firmware for ESP32-S3 Waveshare 8DI8DO (PoE Ethernet)** — part of the [Node32-HUB](https://github.com/nasp2000/Node32-HUB) project.
+**Industrial OEE and production-counting firmware for ESP32-S3 (N16R8) hardware** — part of the [Node32-HUB](https://github.com/nasp2000/Node32-HUB) project.
 
-> ⚠️ Current release targets **ESP32-S3 Waveshare 8DI8DO POE only**.
+> Current release targets the **Waveshare ESP32-S3-POE-ETH-8DI-8DO** industrial controller (ESP32-S3, 16&nbsp;MB flash + 8&nbsp;MB PSRAM).
 
-Industrial production monitor built on the **Waveshare 8DI8DO**. Eight opto-isolated digital inputs read PNP/NPN proximity sensors, encoders and relays and turn them into counters, presence detection and speed, with automatic shift management, CSV reports to SD, and real-time **OEE** (Availability × Performance × Quality) per channel. Runs on **Ethernet (W5500)** with email alerts.
+Node32-OEE turns opto-isolated digital inputs into actionable production data: pulse counting, presence detection and speed measurement across eight independent channels, with automatic shift handling, CSV reporting and real-time **OEE** (Availability × Performance × Quality). Designed for the factory floor — wallboard dashboard, email alerting and PoE-powered Ethernet connectivity.
 
 <table>
   <tr>
+    <td width="50%"><img src="image/oee2.png" width="100%" alt="Node32-OEE channel overview"></td>
+    <td width="50%"><img src="image/oee3.png" width="100%" alt="Node32-OEE dashboard detail"></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="image/email.png" width="100%" alt="Node32-OEE email alerts"></td>
     <td width="50%"><img src="image/oee.png" width="100%" alt="Node32-OEE production / OEE page"></td>
-    <td width="50%"><img src="image/csv.png" width="100%" alt="Node32-OEE shift CSV report"></td>
   </tr>
 </table>
 
@@ -47,9 +51,9 @@ Industrial production monitor built on the **Waveshare 8DI8DO**. Eight opto-isol
 
 ## Hardware Recommendation
 
-[**Waveshare ESP32-S3 8DI8DO POE**](https://www.waveshare.com/esp32-s3-8di8do-poe.htm) — 8 opto-isolated digital inputs, 8 relay outputs, W5500 Ethernet and PoE.
+[**Waveshare ESP32-S3-POE-ETH-8DI-8DO**](https://www.waveshare.com/esp32-s3-poe-eth-8di-8do.htm) — industrial ESP32-S3 controller (N16R8 module: 16&nbsp;MB flash, 8&nbsp;MB PSRAM) with 8 opto-isolated digital inputs, 8 relay outputs, W5500 Ethernet and PoE power.
 
-The only tested board. The digital inputs map directly to the proximity/encoder channels (DI1…DI8).
+The only tested board. The digital inputs map directly to the proximity/encoder channels (DI1…DI8). Any ESP32-S3 N16R8-based hardware with equivalent isolated inputs and Ethernet can be evaluated on request.
 
 ---
 
@@ -59,6 +63,8 @@ The only tested board. The digital inputs map directly to the proximity/encoder 
 2. Connect the board over **Ethernet (PoE)** and wire your sensors to DI1…DI8
 3. Open `http://node32-oee.local/proximity` in a browser (mDNS — follows the System Name) or `http://<esp32-ip>/proximity`, and log in (default `root`/`root`)
 4. Configure each active channel (mode, sensor type, shift times) and watch counts / OEE on the dashboard
+
+> For pre-built binary downloads and enterprise deployments, please contact the project author (see the main [Node32-HUB](https://github.com/nasp2000/Node32-HUB) repository).
 
 ---
 
