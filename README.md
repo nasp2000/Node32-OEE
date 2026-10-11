@@ -6,7 +6,7 @@
 
 Node32-OEE turns opto-isolated digital inputs into actionable production data: pulse counting, presence detection and speed measurement across eight independent channels, with automatic shift handling, CSV reporting and real-time **OEE** (Availability × Performance × Quality). Designed for the factory floor — wallboard dashboard, email alerting and PoE-powered Ethernet connectivity.
 
-> **For supervisors and line managers:** with this OEE automation you receive every count directly, plus early alerts on stoppages or low OEE — before they cost you the shift.
+> **For line managers:** with this OEE automation, every count plus early alerts on stoppages or low OEE go straight from the equipment to your email inbox.
 
 🎬 **Demo video:** [Node32-OEE_video.mp4](image/Node32-OEE_video.mp4)
 
