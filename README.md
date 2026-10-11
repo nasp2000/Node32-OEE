@@ -6,6 +6,10 @@
 
 Node32-OEE turns opto-isolated digital inputs into actionable production data: pulse counting, presence detection and speed measurement across eight independent channels, with automatic shift handling, CSV reporting and real-time **OEE** (Availability × Performance × Quality). Designed for the factory floor — wallboard dashboard, email alerting and PoE-powered Ethernet connectivity.
 
+> **For supervisors and line managers:** with this OEE automation you receive every count directly, plus early alerts on stoppages or low OEE — before they cost you the shift.
+
+🎬 **Demo video:** [Node32-OEE_video.mp4](image/Node32-OEE_video.mp4)
+
 <table>
   <tr>
     <td width="50%"><img src="image/oee2.png" width="100%" alt="Node32-OEE channel overview"></td>
@@ -64,7 +68,7 @@ The only tested board. The digital inputs map directly to the proximity/encoder 
 3. Open `http://node32-oee.local/proximity` in a browser (mDNS — follows the System Name) or `http://<esp32-ip>/proximity`, and log in (default `root`/`root`)
 4. Configure each active channel (mode, sensor type, shift times) and watch counts / OEE on the dashboard
 
-> For pre-built binary downloads and enterprise deployments, please contact the project author (see the main [Node32-HUB](https://github.com/nasp2000/Node32-HUB) repository).
+> For pre-built binary downloads and enterprise deployments, please contact the project author: [nasp2000](https://github.com/nasp2000).
 
 ---
 
