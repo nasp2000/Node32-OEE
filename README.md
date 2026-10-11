@@ -63,7 +63,7 @@ The only tested board. The digital inputs map directly to the proximity/encoder 
 
 ## Quick start
 
-1. Flash the pre-built binary to your ESP32-S3 8DI8DO (binaries in Releases) using [webflasher_Node32-HUB](https://github.com/nasp2000/webflasher_Node32-HUB). For future updates use **OTA** at `http://<esp32-ip>/ota`
+1. Flash the firmware built from the main [Node32-HUB](https://github.com/nasp2000/Node32-HUB) project to your ESP32-S3 8DI8DO using [webflasher_Node32-HUB](https://github.com/nasp2000/webflasher_Node32-HUB) (no pre-built binaries published yet). For future updates use **OTA** at `http://<esp32-ip>/ota`
 2. Connect the board over **Ethernet (PoE)** and wire your sensors to DI1…DI8
 3. Open `http://node32-oee.local/proximity` in a browser (mDNS — follows the System Name) or `http://<esp32-ip>/proximity`, and log in (default `root`/`root`)
 4. Configure each active channel (mode, sensor type, shift times) and watch counts / OEE on the dashboard
